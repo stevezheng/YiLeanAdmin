@@ -3,6 +3,7 @@
 ###配置
 cd /www/resource/js/admin/config.js
 
+```language
 var config = {
   models: [
     {
@@ -25,6 +26,7 @@ var config = {
     }
   ]
 };
+```
 
 
 ###运行方式
