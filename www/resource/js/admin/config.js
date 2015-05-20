@@ -1,11 +1,11 @@
 var config = {
   models: [
     {
-      'name': 'Info'
-      , 'type': 'normal'
-      , 'cname': '信息'
+      'name': 'Info' //Class的名称
+      , 'type': 'normal' //生成模板类型，暂时只有normal
+      , 'cname': '信息' //Class的中文名称，用于导航栏显示
       , 'fields': [
-      ['avatar', 'image', '头像']
+      ['avatar', 'image', '头像'] //三者分别是，字段名，字段类型，字段中文名称
       , ['name', 'string', '名称']
       , ['address', 'string', '地址']
       , ['phone', 'string', '电话']
