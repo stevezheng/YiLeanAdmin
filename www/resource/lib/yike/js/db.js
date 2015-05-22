@@ -85,7 +85,18 @@ function D(model) {
     },
 
     order: function (order) {
+      var _order = order.split(' ');
+      if (_order.length === 1) {
+        q.ascending(order);
+      } else if (_order.length === 2) {
+        if (_order[1].toLowerCase() === 'desc') {
+          q.descending(_order[0]);
+        } else {
+          q.ascending(_order[0]);
+        }
+      }
 
+      return this;
     },
 
     alias: function (alias) {
